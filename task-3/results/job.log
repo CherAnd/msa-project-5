@@ -1,0 +1,8 @@
+❯ kubectl get jobs
+NAME              STATUS     COMPLETIONS   DURATION   AGE
+export-29466480   Complete   1/1           3s         2d22h
+export-29467920   Complete   1/1           3s         46h
+export-29469360   Complete   1/1           4s         22h
+andrey@hp ~/dev/edu/yandex.practicum.microservices/msa-project-5/task-3/results (tasks)
+❯ kubectl logs job/export-29466480
+Exported 20 rows to ./shipments.csv

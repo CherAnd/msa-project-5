@@ -1,0 +1,21 @@
+❯ docker build -t exporter .
+Sending build context to Docker daemon   16.9kB
+Step 1/6 : FROM python:3.13-slim
+ ---> 26fa9b6e2848
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> a4c10520e7c6
+Step 3/6 : COPY ./app/requirements.txt .
+ ---> Using cache
+ ---> a61d451409fc
+Step 4/6 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> cdbe77586d6b
+Step 5/6 : COPY ./app/export.py .
+ ---> Using cache
+ ---> c46441fe7db8
+Step 6/6 : CMD ["python", "export.py"]
+ ---> Using cache
+ ---> 6985181bb573
+Successfully built 6985181bb573
+Successfully tagged exporter:latest
