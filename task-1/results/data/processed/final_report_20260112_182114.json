@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-01-12T18:21:14.290565",
+  "analysis_summary": {
+    "cities": {
+      "Казань": 3,
+      "Москва": 4,
+      "Санкт-Петербург": 3
+    },
+    "avg_salary": 61300.0,
+    "max_salary": 80000.0,
+    "min_salary": 48000.0,
+    "departments": {
+      "IT": 4,
+      "Finance": 3,
+      "Marketing": 3
+    },
+    "total_records": 10,
+    "needs_processing": true,
+    "high_earn_employees": 4
+  },
+  "processing_summary": [
+    {
+      "output_file": "/opt/airflow/data/processed/high_earn_employees.csv",
+      "processed_records": 4,
+      "avg_salary_high_earn_employees": 72500.0,
+      "departments_high_earn_employees": {
+        "IT": 1,
+        "Finance": 2,
+        "Marketing": 1
+      }
+    },
+    null
+  ],
+  "status": "completed_successfully"
+}
