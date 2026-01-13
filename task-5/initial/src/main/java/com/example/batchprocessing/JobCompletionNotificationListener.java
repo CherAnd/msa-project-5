@@ -24,7 +24,11 @@ public class JobCompletionNotificationListener implements JobExecutionListener {
 	@Override
 	public void afterJob(JobExecution jobExecution) {
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
-			// todo
+			log.info("!!! JOB FINISHED! Time to verify the results");
+
+			jdbcTemplate
+					.query("SELECT productId, productSku, productName, productAmount, productData FROM products", new DataClassRowMapper<>(Product.class))
+					.forEach(person -> log.info("Transformed <{}> in the database.", person));
 		}
 	}
 }

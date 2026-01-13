@@ -1,1 +1,7 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral() // Обязательно добавьте этот репозиторий
+    }
+}
 rootProject.name = 'batch-processing'
