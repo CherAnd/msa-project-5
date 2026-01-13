@@ -1,0 +1,25 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Price Export to CSV
+
+Person(user, "Пользователь", "")
+
+System_Boundary(shop, "Онлайн-магазин (облако, микросервисы)") {
+  System(csv_exporter, "CSV Exporter (K8s CronJob)", "Ежедневно выполняется run_query")
+}
+
+System_Ext(pg, "PostgreSQL", "Хранит данные о продуктах, категориях, клиентах и ценах")
+System_Ext(storage, "Объектное хранилище", "Файлы")
+System_Ext(k8s, "Kubernetes API", "Планирование CronJob, запуск Pod")
+System_Ext(monitor, "Мониторинг и оповещение", "Метрики, уведомления")
+System_Ext(logger, "Логирование", "ELK. Логи по приложениям")
+
+Rel(storage, user, "Скачивает прайс-листы")
+Rel(k8s, csv_exporter, "Запускает по CRON",)
+Rel(pg, csv_exporter, "Читает данные")
+Rel(csv_exporter, storage, "Загружает CSV")
+Rel(csv_exporter, monitor, "Публикует метрики/события")
+Rel(csv_exporter, logger, "Пишет логи")
+
+@enduml

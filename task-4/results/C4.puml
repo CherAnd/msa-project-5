@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(warehouse_employee, "Сотрудник склада")
+
+Container(web_ui, "Web UI", "Angular", "Интерфейс для сотрудников склада")
+Container(backend, "Backend API", "Java / WildFly", "Приём файлов и API")
+Container(batch, "Spring Batch Service", "Spring Batch", "ETL-обработка отчётов")
+
+ContainerDb(minio, "Minio", "Object Storage", "CSV-файлы отчётов")
+ContainerDb(inventory_db, "Inventory DB", "PostgreSQL",  "Номенклатура и остатки")
+ContainerDb(batch_db, "Batch Metadata DB", "PostgreSQL", "Статусы и шаги batch-job")
+
+Rel(warehouse_employee, web_ui, "Загружает данные")
+Rel(web_ui, backend, "REST")
+Rel(backend, minio, "Сохраняет файл")
+Rel(backend, batch, "Запускает Job")
+Rel(batch, minio, "Читает CSV")
+Rel(batch, inventory_db, "Batch insert/update")
+Rel(batch, batch_db, "Сохраняет статус")
+
+@enduml

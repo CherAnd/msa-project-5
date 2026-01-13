@@ -1,0 +1,20 @@
+❯ minikube start --driver=docker
+😄  minikube v1.37.0 на Linuxmint 22.2
+✨  Используется драйвер docker на основе существующего профиля
+👍  Starting "minikube" primary control-plane node in "minikube" cluster
+🚜  Pulling base image v0.0.48 ...
+🔄  Перезагружается существующий docker container для "minikube" ...
+🌐  Found network options:
+    ▪ NO_PROXY=172.*, 192.168.*, localhost, *.ru
+🐳  Подготавливается Kubernetes v1.34.0 на Docker 28.4.0 ...
+    ▪ env NO_PROXY=172.*, 192.168.*, localhost, *.ru
+🔎  Компоненты Kubernetes проверяются ...
+    ▪ Используется образ gcr.io/k8s-minikube/storage-provisioner:v5
+    ▪ Используется образ docker.io/kubernetesui/dashboard:v2.7.0
+    ▪ Используется образ docker.io/kubernetesui/metrics-scraper:v1.0.8
+💡  Some dashboard features require the metrics-server addon. To enable all features please run:
+
+        minikube addons enable metrics-server
+
+🌟  Включенные дополнения: storage-provisioner, dashboard, default-storageclass
+🏄  Готово! kubectl настроен для использования кластера "minikube" и "default" пространства имён по умолчанию

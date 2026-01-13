@@ -1,0 +1,38 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "Сотрудник склада", "Загружает CSV и смотрит статус")
+
+System_Boundary(sys, "ETL System") {
+  Container(web, "Frontend", "Browser/WebSockets", "UI для загрузки и статусов")
+  Container(mon, "Монолит ERP", "Java 11", "Приём CSV, первичная валидация, запись в Minio, обратные уведомления")
+  Container(etl, "ETL (Spring Batch)", "Spring Boot 3 + Spring Batch", "Чтение CSV из Minio и обработка")
+  ContainerDb(pg, "PostgreSQL", "SQL", "Доменные таблицы + staging + Batch JobRepository")
+  Container_Ext(minio, "Minio", "Object Storage", "Хранение файлов")
+
+  Container(prometheus, "Prometheus", "Time‑series DB", "Чтение и хранение метрик")
+  Container(grafana, "Grafana", "Dashboards", "Визуализация метрик")
+  Container(filebeat, "Filebeat", "Log shipper (Beats)", "Сбор логов")
+  Container(logstash, "Logstash", "Ingest pipeline", "Парсинг/обогощение логов")
+  Container(elasticsearch, "Elasticsearch", "Search engine", "Хранение логов для Kibana")
+  Container(kibana, "Kibana", "Dashboards", "Визуализация логов")
+}
+
+Rel(user, web, "Загрузка файла / просмотр статуса")
+Rel(web, mon, "POST /upload (CSV)")
+Rel(mon, minio, "PUT object (CSV)")
+Rel(mon, etl, "Запуск Job (REST/PubSub)")
+Rel(etl, minio, "GET object (CSV)")
+Rel(etl, pg, "Request", "JDBC")
+Rel(etl, mon, "Callback статуса / Webhook")
+
+Rel(etl, prometheus, "Expose metrics", "/actuator/prometheus")
+Rel(prometheus, grafana, "Queries metrics", "HTTP/PromQL")
+
+Rel(filebeat, logstash, "Ships logs", "Beats (tcp/5044)")
+Rel(logstash, elasticsearch, "Writes logs", "HTTP/9200")
+Rel(elasticsearch, kibana, "Logs", "HTTP")
+
+Rel(etl, filebeat, "Writes logs", "json-file driver")
+
+@enduml

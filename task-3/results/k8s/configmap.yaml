@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: export-config
+data:
+  DB_HOST: postgres
+  DB_NAME: logistics
+  init.sql: |
+    CREATE TABLE shipments
+    (
+        id          SERIAL PRIMARY KEY,
+        description TEXT        NOT NULL,
+        status      VARCHAR(50) NOT NULL,
+        created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    INSERT INTO shipments (description, status)
+    VALUES ('First shipment: books', 'pending'),
+           ('Second shipment: electronics', 'shipped'),
+           ('Third shipment: office supplies', 'delivered'),
+           ('Fourth shipment: furniture', 'in transit'),
+           ('Fifth shipment: clothing', 'pending'),
+           ('Sixth shipment: groceries', 'shipped'),
+           ('Seventh shipment: computer parts', 'delivered'),
+           ('Eighth shipment: toys', 'pending'),
+           ('Ninth shipment: sports equipment', 'in transit'),
+           ('Tenth shipment: musical instruments', 'pending');

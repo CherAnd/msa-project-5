@@ -14,8 +14,9 @@ repositories {
 }
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
-//	runtimeOnly 'org.hsqldb:hsqldb'
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.postgresql:postgresql:42.2.5")
 
 	implementation 'io.micrometer:micrometer-tracing-bridge-brave'
@@ -25,9 +26,13 @@ dependencies {
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.batch:spring-batch-test'
+
+	// OpenTelemetry dependencies
+    implementation("io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter:2.23.0")  // Use same spring boot version
+    runtimeOnly("io.opentelemetry.javaagent:opentelemetry-javaagent:2.23.0")      // Add javaagent with the version you need
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
 }
 
 test {
 	useJUnitPlatform()
-
 }

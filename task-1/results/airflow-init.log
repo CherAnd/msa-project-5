@@ -1,0 +1,438 @@
+2026-01-12T18:02:34.550593561Z
+2026-01-12T18:02:34.550642591Z Creating missing opt dirs if missing:
+2026-01-12T18:02:34.550647340Z
+2026-01-12T18:02:34.554794656Z
+2026-01-12T18:02:34.554819031Z Airflow version:
+2026-01-12T18:02:34.654500029Z The container is run as root user. For security, consider using a regular user account.
+2026-01-12T18:02:43.681616596Z
+2026-01-12T18:02:46.088754180Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:02:46.326037499Z 2026-01-12T18:02:46.325796Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:02:46.326121520Z 2026-01-12T18:02:46.326002Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:02:46.339834811Z 2026-01-12T18:02:46.339660Z [info     ] Migrating the Airflow database [airflow.utils.db] loc=db.py:1129
+2026-01-12T18:02:46.357367507Z 2026-01-12T18:02:46.357158Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:02:46.357417026Z 2026-01-12T18:02:46.357306Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:02:46.452669522Z 2026-01-12T18:02:46.452456Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:02:46.452723022Z 2026-01-12T18:02:46.452636Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:02:46.489147410Z 2026-01-12T18:02:46.488392Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:02:46.489181283Z 2026-01-12T18:02:46.488976Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:02:46.636680283Z DB: postgresql+psycopg2://airflow:***@postgres/airflow
+2026-01-12T18:02:46.636712690Z Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres/airflow
+2026-01-12T18:02:46.636716531Z Database migrating done!
+2026-01-12T18:02:49.512965710Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:02:52.515208834Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:02:52.851766530Z /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:324 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+2026-01-12T18:02:55.175021490Z airflow already exist in the db
+2026-01-12T18:02:58.039606773Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:02:58.082481673Z 3.1.5
+2026-01-12T18:02:58.533412921Z
+2026-01-12T18:02:58.533446516Z Files in shared volumes:
+2026-01-12T18:02:58.533450706Z
+2026-01-12T18:02:58.541622765Z /opt/airflow/config:
+2026-01-12T18:02:58.541649235Z total 120
+2026-01-12T18:02:58.541654473Z drwxrwxr-x 2    1000 root   4096 Jan  9 11:07 .
+2026-01-12T18:02:58.541658315Z drwxrwxr-x 1 airflow root   4096 Jan 12 18:02 ..
+2026-01-12T18:02:58.541664601Z -rw------- 1    1000 root 111548 Jan  9 11:07 airflow.cfg
+2026-01-12T18:02:58.541668442Z
+2026-01-12T18:02:58.541672702Z /opt/airflow/dags:
+2026-01-12T18:02:58.541676963Z total 40
+2026-01-12T18:02:58.541680734Z drwxrwxr-x 3    1000 root  4096 Jan 12 18:00 .
+2026-01-12T18:02:58.541684017Z drwxrwxr-x 1 airflow root  4096 Jan 12 18:02 ..
+2026-01-12T18:02:58.541689255Z drwxrwxr-x 2    1000 root  4096 Jan  9 11:31 __pycache__
+2026-01-12T18:02:58.541693166Z -rw-rw-r-- 1    1000 root   726 Jan  9 10:59 email.py
+2026-01-12T18:02:58.541698963Z -rw-rw-r-- 1    1000 root 21209 Jan 12 18:00 process.py
+2026-01-12T18:02:58.541703223Z
+2026-01-12T18:02:58.541707065Z /opt/airflow/logs:
+2026-01-12T18:02:58.541710766Z total 16
+2026-01-12T18:02:58.541714538Z drwxrwxr-x  4    1000 root 4096 Jan  9 09:26 .
+2026-01-12T18:02:58.541718379Z drwxrwxr-x  1 airflow root 4096 Jan 12 18:02 ..
+2026-01-12T18:02:58.541721732Z drwxrwxr-x 17    1000 root 4096 Jan  9 11:30 dag_id=task1
+2026-01-12T18:02:58.541725154Z drwxrwxr-x  3    1000 root 4096 Jan  9 08:50 dag_processor
+2026-01-12T18:02:58.541730392Z
+2026-01-12T18:02:58.541734164Z /opt/airflow/plugins:
+2026-01-12T18:02:58.541737516Z total 8
+2026-01-12T18:02:58.541740380Z drwxrwxr-x 2    1000 root 4096 Jan  9 08:46 .
+2026-01-12T18:02:58.541744151Z drwxrwxr-x 1 airflow root 4096 Jan 12 18:02 ..
+2026-01-12T18:02:58.541813784Z
+2026-01-12T18:02:58.541854921Z Running airflow config list to create default config file if missing.
+2026-01-12T18:02:58.541859671Z
+2026-01-12T18:02:58.568133223Z The container is run as root user. For security, consider using a regular user account.
+2026-01-12T18:03:03.821319703Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:03:04.050368666Z 2026-01-12T18:03:04.050129Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:03:04.050463093Z 2026-01-12T18:03:04.050346Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:03:04.061102128Z 2026-01-12T18:03:04.060879Z [info     ] Migrating the Airflow database [airflow.utils.db] loc=db.py:1129
+2026-01-12T18:03:04.074864867Z 2026-01-12T18:03:04.074632Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:03:04.074912989Z 2026-01-12T18:03:04.074820Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:03:04.108764939Z 2026-01-12T18:03:04.108558Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:03:04.108832267Z 2026-01-12T18:03:04.108728Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:03:04.139176449Z 2026-01-12T18:03:04.138953Z [info     ] Context impl PostgresqlImpl.   [alembic.runtime.migration] loc=migration.py:211
+2026-01-12T18:03:04.139384440Z 2026-01-12T18:03:04.139101Z [info     ] Will assume transactional DDL. [alembic.runtime.migration] loc=migration.py:214
+2026-01-12T18:03:07.175268254Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:03:10.101038561Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:03:10.371788651Z /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:324 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+2026-01-12T18:03:13.963046861Z /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:108 RemovedInAirflow4Warning: The airflow.security.permissions module is deprecated; please see https://airflow.apache.org/docs/apache-airflow/stable/security/deprecated_permissions.html
+2026-01-12T18:03:14.140426010Z /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:583 DeprecationWarning: The 'worker_container_repository' option in section kubernetes_executor is deprecated. This configuration is deprecated. Use `pod_template_file` to specify container image instead.
+2026-01-12T18:03:14.140480767Z
+2026-01-12T18:03:14.140840106Z /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:583 DeprecationWarning: The 'worker_container_tag' option in section kubernetes_executor is deprecated. This configuration is deprecated. Use `pod_template_file` to specify the image tag instead.
+2026-01-12T18:03:14.140869440Z
+2026-01-12T18:03:14.141382503Z /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:583 DeprecationWarning: The 'namespace' option in section kubernetes_executor is deprecated. This configuration is deprecated. Use `pod_template_file` to specify namespace instead.
+2026-01-12T18:03:14.141406668Z
+2026-01-12T18:03:14.624181199Z
+2026-01-12T18:03:14.624210743Z Files in shared volumes:
+2026-01-12T18:03:14.624215003Z
+2026-01-12T18:03:14.625520988Z /opt/airflow/config:
+2026-01-12T18:03:14.625557795Z total 120
+2026-01-12T18:03:14.625566246Z drwxrwxr-x 2    1000 root   4096 Jan  9 11:07 .
+2026-01-12T18:03:14.625573300Z drwxrwxr-x 1 airflow root   4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.625579446Z -rw------- 1    1000 root 111548 Jan  9 11:07 airflow.cfg
+2026-01-12T18:03:14.625585173Z
+2026-01-12T18:03:14.625590900Z /opt/airflow/dags:
+2026-01-12T18:03:14.625597046Z total 40
+2026-01-12T18:03:14.625603541Z drwxrwxr-x 3    1000 root  4096 Jan 12 18:00 .
+2026-01-12T18:03:14.625612062Z drwxrwxr-x 1 airflow root  4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.625618348Z drwxrwxr-x 2    1000 root  4096 Jan  9 11:31 __pycache__
+2026-01-12T18:03:14.625624634Z -rw-rw-r-- 1    1000 root   726 Jan  9 10:59 email.py
+2026-01-12T18:03:14.625631269Z -rw-rw-r-- 1    1000 root 21209 Jan 12 18:00 process.py
+2026-01-12T18:03:14.625637415Z
+2026-01-12T18:03:14.625643561Z /opt/airflow/logs:
+2026-01-12T18:03:14.625650266Z total 16
+2026-01-12T18:03:14.625656552Z drwxrwxr-x  4    1000 root 4096 Jan  9 09:26 .
+2026-01-12T18:03:14.625665631Z drwxrwxr-x  1 airflow root 4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.625672197Z drwxrwxr-x 17    1000 root 4096 Jan  9 11:30 dag_id=task1
+2026-01-12T18:03:14.625678413Z drwxrwxr-x  3    1000 root 4096 Jan  9 08:50 dag_processor
+2026-01-12T18:03:14.625685187Z
+2026-01-12T18:03:14.625690356Z /opt/airflow/plugins:
+2026-01-12T18:03:14.625696502Z total 8
+2026-01-12T18:03:14.625702718Z drwxrwxr-x 2    1000 root 4096 Jan  9 08:46 .
+2026-01-12T18:03:14.625709353Z drwxrwxr-x 1 airflow root 4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.625719969Z
+2026-01-12T18:03:14.625727023Z Change ownership of files in /opt/airflow to 1000:0
+2026-01-12T18:03:14.625733728Z
+2026-01-12T18:03:14.636568810Z
+2026-01-12T18:03:14.636587249Z Change ownership of files in shared volumes to 1000:0
+2026-01-12T18:03:14.636592557Z
+2026-01-12T18:03:14.638261024Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_setup_teardown_taskflow.py.log' retained as 1000:root
+2026-01-12T18:03:14.638291754Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_custom_weight.py.log' retained as 1000:root
+2026-01-12T18:03:14.638297063Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_latest_only_with_trigger.py.log' retained as 1000:root
+2026-01-12T18:03:14.638301812Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_asset_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638306072Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_outlet_event_extra.py.log' retained as 1000:root
+2026-01-12T18:03:14.638310333Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_asset_alias.py.log' retained as 1000:root
+2026-01-12T18:03:14.638314104Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_simplest_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.638318364Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_branch_labels.py.log' retained as 1000:root
+2026-01-12T18:03:14.638325209Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_dynamic_task_mapping.py.log' retained as 1000:root
+2026-01-12T18:03:14.638329469Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial_objectstorage.py.log' retained as 1000:root
+2026-01-12T18:03:14.638333730Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_time_delta_sensor_async.py.log' retained as 1000:root
+2026-01-12T18:03:14.638337571Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_xcomargs.py.log' retained as 1000:root
+2026-01-12T18:03:14.638341762Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_local_kubernetes_executor.py.log' retained as 1000:root
+2026-01-12T18:03:14.638346022Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_params_trigger_ui.py.log' retained as 1000:root
+2026-01-12T18:03:14.638350352Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_kubernetes_executor.py.log' retained as 1000:root
+2026-01-12T18:03:14.638353286Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_branch_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638360968Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_external_task_marker_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.638364740Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_bash_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638369000Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_branch_datetime_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638373261Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_branch_day_of_week_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638377521Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_short_circuit_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638380873Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_short_circuit_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638387159Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_bash_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638391490Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_sensor_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638398055Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_external_task_parent_deferrable.py.log' retained as 1000:root
+2026-01-12T18:03:14.638401896Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_sensors.py.log' retained as 1000:root
+2026-01-12T18:03:14.638406156Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_hitl_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638409928Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_python_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638414258Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_branch_operator_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638418658Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_trigger_controller_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.638422500Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_python_operator.py.log' retained as 1000:root
+2026-01-12T18:03:14.638956725Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_latest_only.py.log' retained as 1000:root
+2026-01-12T18:03:14.638976700Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard/example_external_task_child_deferrable.py.log' retained as 1000:root
+2026-01-12T18:03:14.638984871Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/standard' retained as 1000:root
+2026-01-12T18:03:14.638992065Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial_taskflow_templates.py.log' retained as 1000:root
+2026-01-12T18:03:14.638999259Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_setup_teardown.py.log' retained as 1000:root
+2026-01-12T18:03:14.639005894Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_xcom.py.log' retained as 1000:root
+2026-01-12T18:03:14.639012459Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_dag_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.639019653Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_assets.py.log' retained as 1000:root
+2026-01-12T18:03:14.639029361Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py.log' retained as 1000:root
+2026-01-12T18:03:14.639036415Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_inlet_event_extra.py.log' retained as 1000:root
+2026-01-12T18:03:14.639042491Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/plugins/listener_plugin.py.log' retained as 1000:root
+2026-01-12T18:03:14.639136848Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/plugins/decreasing_priority_weight_strategy.py.log' retained as 1000:root
+2026-01-12T18:03:14.639192234Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/plugins/event_listener.py.log' retained as 1000:root
+2026-01-12T18:03:14.639242730Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/plugins/workday.py.log' retained as 1000:root
+2026-01-12T18:03:14.639253346Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/plugins' retained as 1000:root
+2026-01-12T18:03:14.639259981Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_nested_branch_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.639270737Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_params_ui_tutorial.py.log' retained as 1000:root
+2026-01-12T18:03:14.639277511Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial.py.log' retained as 1000:root
+2026-01-12T18:03:14.639283867Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_workday_timetable.py.log' retained as 1000:root
+2026-01-12T18:03:14.639290502Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_asset_with_watchers.py.log' retained as 1000:root
+2026-01-12T18:03:14.639297067Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_display_name.py.log' retained as 1000:root
+2026-01-12T18:03:14.639304121Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_passing_params_via_test_command.py.log' retained as 1000:root
+2026-01-12T18:03:14.639310756Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_branch_python_dop_operator_3.py.log' retained as 1000:root
+2026-01-12T18:03:14.639317461Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_task_group.py.log' retained as 1000:root
+2026-01-12T18:03:14.639326960Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_complex.py.log' retained as 1000:root
+2026-01-12T18:03:14.639333944Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial_taskflow_api_virtualenv.py.log' retained as 1000:root
+2026-01-12T18:03:14.639340579Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_skip_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.639347284Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.639354059Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_asset_alias_with_no_taskflow.py.log' retained as 1000:root
+2026-01-12T18:03:14.639360694Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_trigger_target_dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.639367748Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/example_task_group_decorator.py.log' retained as 1000:root
+2026-01-12T18:03:14.639374383Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags/tutorial_taskflow_api.py.log' retained as 1000:root
+2026-01-12T18:03:14.639384091Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/example_dags' retained as 1000:root
+2026-01-12T18:03:14.639723106Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder/process.py.log' retained as 1000:root
+2026-01-12T18:03:14.639734211Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder/dag.py.log' retained as 1000:root
+2026-01-12T18:03:14.639741335Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder/marketing_batch_pipeline.py.log' retained as 1000:root
+2026-01-12T18:03:14.639747411Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder/email.py.log' retained as 1000:root
+2026-01-12T18:03:14.639753208Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder/task1.py.log' retained as 1000:root
+2026-01-12T18:03:14.639760402Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09/dags-folder' retained as 1000:root
+2026-01-12T18:03:14.639768574Z ownership of '/opt/airflow/logs/dag_processor/2026-01-09' retained as 1000:root
+2026-01-12T18:03:14.639775628Z ownership of '/opt/airflow/logs/dag_processor/latest' retained as 1000:root
+2026-01-12T18:03:14.639781704Z ownership of '/opt/airflow/logs/dag_processor' retained as 1000:root
+2026-01-12T18:03:14.639788479Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639795254Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.639801958Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639808943Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.639818371Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639827940Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.639834645Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639841629Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.639849172Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639856296Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.639862582Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639869706Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.639882976Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639893103Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.639899808Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:46:00+00:00' retained as 1000:root
+2026-01-12T18:03:14.639906443Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639913078Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.639933611Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639940735Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.639947370Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639953167Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.639962736Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.639969371Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.640640976Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640649916Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.640654176Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640658507Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.640662907Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640672964Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.640678062Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:26:39+00:00' retained as 1000:root
+2026-01-12T18:03:14.640681415Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640685675Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.640694894Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640699155Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.640702926Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640707257Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.640713822Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640718082Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.640722482Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640726324Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.640730584Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640734425Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.640738197Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640742457Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.640749092Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:03:32+00:00' retained as 1000:root
+2026-01-12T18:03:14.640752934Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640757334Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.640761175Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640765366Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.640769626Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.640773956Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.640780591Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641309718Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.641321591Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641326410Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.641330740Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641335071Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.641338912Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641343522Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.641350226Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:05:41+00:00' retained as 1000:root
+2026-01-12T18:03:14.641353998Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641358328Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.641362728Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641366570Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.641370830Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641375021Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.641379281Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641386475Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.641389827Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641394227Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.641398069Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641407008Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.641411199Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641415459Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.641420209Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T09:26:13.715442+00:00' retained as 1000:root
+2026-01-12T18:03:14.641426425Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641430685Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.641435015Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641438228Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.641441511Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.641445282Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.642157186Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642174857Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.642179117Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642183796Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.642224305Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642228635Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.642232896Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642237156Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.642240858Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:36:53+00:00' retained as 1000:root
+2026-01-12T18:03:14.642256991Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642261322Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.642265652Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642269912Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.642273754Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642368600Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.642374327Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642378587Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.642385292Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642389203Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.642393464Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642397724Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.642401914Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642405756Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.642410016Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:43:53+00:00' retained as 1000:root
+2026-01-12T18:03:14.642413858Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642420702Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.642424962Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642428734Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.642589022Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.642882920Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.643019601Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643027773Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.643034478Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643038738Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.643043068Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643046281Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.643050611Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643054383Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.643062135Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T09:48:54+00:00' retained as 1000:root
+2026-01-12T18:03:14.643066466Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643072612Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.643076802Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643080644Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.643083926Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643089234Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.643093634Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643097895Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.643102155Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643775437Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.643780116Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643784376Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.643788637Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643792478Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.643796808Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:42:18+00:00' retained as 1000:root
+2026-01-12T18:03:14.643801069Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643805329Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.643811825Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.643816085Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.643823698Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=read_data/attempt=2.log' retained as 1000:root
+2026-01-12T18:03:14.647501533Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647621732Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.647668526Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647708127Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.647745213Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647787258Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.647797874Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647826440Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.647831259Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647841247Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.647845926Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:02:55+00:00' retained as 1000:root
+2026-01-12T18:03:14.647850186Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647855494Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.647859825Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647864155Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.647871279Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647875609Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.647887901Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647891813Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.647896143Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647902219Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.647906549Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647911299Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.647935604Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647943217Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.647954322Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:07:20+00:00' retained as 1000:root
+2026-01-12T18:03:14.647958163Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=success_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647962423Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=success_notification' retained as 1000:root
+2026-01-12T18:03:14.647971363Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647976112Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.647980443Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647984773Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.647988684Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.647992525Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.647996297Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648000487Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.648089886Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648094565Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.648098407Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648102597Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.648106369Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T11:13:49+00:00' retained as 1000:root
+2026-01-12T18:03:14.648110699Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648115029Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.648118940Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648126972Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.648131302Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648135493Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.648139823Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648146528Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.648149950Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648154211Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.648157493Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648165176Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.648168878Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648176560Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.648180472Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T10:30:04.542514+00:00' retained as 1000:root
+2026-01-12T18:03:14.648184802Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=send_notification/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648188992Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=send_notification' retained as 1000:root
+2026-01-12T18:03:14.648193183Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=cleanup_temp_files/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648197513Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=cleanup_temp_files' retained as 1000:root
+2026-01-12T18:03:14.648419472Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648436165Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.648452298Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=process_high_earners/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648456559Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=process_high_earners' retained as 1000:root
+2026-01-12T18:03:14.648461308Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=analyze_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648465219Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=analyze_data' retained as 1000:root
+2026-01-12T18:03:14.648468642Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=branch_on_analysis/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648480864Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=branch_on_analysis' retained as 1000:root
+2026-01-12T18:03:14.648487639Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=generate_report/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648491410Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00/task_id=generate_report' retained as 1000:root
+2026-01-12T18:03:14.648495740Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=manual__2026-01-09T10:57:08+00:00' retained as 1000:root
+2026-01-12T18:03:14.648499163Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T11:30:04.542514+00:00/task_id=read_data/attempt=1.log' retained as 1000:root
+2026-01-12T18:03:14.648533525Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T11:30:04.542514+00:00/task_id=read_data' retained as 1000:root
+2026-01-12T18:03:14.648539671Z ownership of '/opt/airflow/logs/dag_id=task1/run_id=scheduled__2026-01-09T11:30:04.542514+00:00' retained as 1000:root
+2026-01-12T18:03:14.648543373Z ownership of '/opt/airflow/logs/dag_id=task1' retained as 1000:root
+2026-01-12T18:03:14.648547564Z ownership of '/opt/airflow/logs' retained as 1000:root
+2026-01-12T18:03:14.648553291Z ownership of '/opt/airflow/dags/__pycache__/email.cpython-312.pyc' retained as 1000:root
+2026-01-12T18:03:14.648556573Z ownership of '/opt/airflow/dags/__pycache__/process.cpython-312.pyc' retained as 1000:root
+2026-01-12T18:03:14.648560903Z ownership of '/opt/airflow/dags/__pycache__' retained as 1000:root
+2026-01-12T18:03:14.648565234Z ownership of '/opt/airflow/dags/process.py' retained as 1000:root
+2026-01-12T18:03:14.648568586Z ownership of '/opt/airflow/dags/email.py' retained as 1000:root
+2026-01-12T18:03:14.648571939Z ownership of '/opt/airflow/dags' retained as 1000:root
+2026-01-12T18:03:14.648574872Z ownership of '/opt/airflow/plugins' retained as 1000:root
+2026-01-12T18:03:14.648578155Z ownership of '/opt/airflow/config/airflow.cfg' retained as 1000:root
+2026-01-12T18:03:14.648583812Z ownership of '/opt/airflow/config' retained as 1000:root
+2026-01-12T18:03:14.648587094Z
+2026-01-12T18:03:14.648591355Z Files in shared volumes:
+2026-01-12T18:03:14.648594288Z
+2026-01-12T18:03:14.648597152Z /opt/airflow/config:
+2026-01-12T18:03:14.648601552Z total 120
+2026-01-12T18:03:14.648604834Z drwxrwxr-x 2 1000 root   4096 Jan  9 11:07 .
+2026-01-12T18:03:14.648609165Z drwxrwxr-x 1 1000 root   4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.648615730Z -rw------- 1 1000 root 111548 Jan  9 11:07 airflow.cfg
+2026-01-12T18:03:14.648619501Z
+2026-01-12T18:03:14.648623343Z /opt/airflow/dags:
+2026-01-12T18:03:14.648627184Z total 40
+2026-01-12T18:03:14.648631095Z drwxrwxr-x 3 1000 root  4096 Jan 12 18:00 .
+2026-01-12T18:03:14.648638219Z drwxrwxr-x 1 1000 root  4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.648650511Z drwxrwxr-x 2 1000 root  4096 Jan  9 11:31 __pycache__
+2026-01-12T18:03:14.648654842Z -rw-rw-r-- 1 1000 root   726 Jan  9 10:59 email.py
+2026-01-12T18:03:14.648661127Z -rw-rw-r-- 1 1000 root 21209 Jan 12 18:00 process.py
+2026-01-12T18:03:14.648664969Z
+2026-01-12T18:03:14.648669229Z /opt/airflow/logs:
+2026-01-12T18:03:14.648673420Z total 16
+2026-01-12T18:03:14.648677261Z drwxrwxr-x  4 1000 root 4096 Jan  9 09:26 .
+2026-01-12T18:03:14.648681521Z drwxrwxr-x  1 1000 root 4096 Jan 12 18:02 ..
+2026-01-12T18:03:14.648685363Z drwxrwxr-x 17 1000 root 4096 Jan  9 11:30 dag_id=task1
+2026-01-12T18:03:14.648689204Z drwxrwxr-x  3 1000 root 4096 Jan  9 08:50 dag_processor
+2026-01-12T18:03:14.648695979Z
+2026-01-12T18:03:14.648708271Z /opt/airflow/plugins:
+2026-01-12T18:03:14.648727897Z total 8
+2026-01-12T18:03:14.648732157Z drwxrwxr-x 2 1000 root 4096 Jan  9 08:46 .
+2026-01-12T18:03:14.648736348Z drwxrwxr-x 1 1000 root 4096 Jan 12 18:02 ..
